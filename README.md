@@ -1,15 +1,17 @@
 <center><img src="image/netflix.jpg"></center>
 
-**Netflix**! What started in 1997 as a DVD rental service has since exploded into one of the largest entertainment and media companies.
+---
 
-Given the large number of movies and series available on the platform, it is a perfect opportunity to flex your exploratory data analysis skills and dive into the entertainment industry.
+# Investigating Netflix Movies
 
-You work for a production company that specializes in nostalgic styles. You want to do some research on movies released in the 1990's. You'll delve into Netflix data and perform exploratory data analysis to better understand this awesome movie decade!
+**Netflix**, founded in 1997, started as a DVD rental service before evolving into one of the world’s largest streaming platforms. Today, it serves millions of subscribers across the globe, offering a wide range of movies, TV shows, documentaries, and original content. With its vast entertainment library and global reach, Netflix not only transformed how people consume media but also provides a valuable dataset for analyzing trends in the entertainment industry.
 
-You have been supplied with the dataset `netflix_data.csv`, along with the following table detailing the column names and descriptions. Feel free to experiment further after submitting!
+This project analyzes **Netflix movies released between year 2000 to 2010** using Python, Pandas, and Matplotlib. The goal is to uncover patterns in genres, durations, and overall movie distribution during this decade.
 
-## The data
-### **netflix_data.csv**
+---
+
+## Dataset
+The dataset **`netflix_data.csv`** contains following information:
 | Column | Description |
 |--------|-------------|
 | `show_id` | The ID of the show |
@@ -23,3 +25,40 @@ You have been supplied with the dataset `netflix_data.csv`, along with the follo
 | `duration` | Duration of the show in minutes |
 | `description` | Description of the show |
 | `genre` | Show genre |
+
+---
+
+## Exploratory Data Analysis (EDA)
+These were the steps performed to acquire the insights:
+
+1. **Filtering** → Subsetted the data to keep only movies released between year 2000 to 2010.  
+2. **Duration Categorization** → Movies were labeled as:  
+   - `Short` (< 90 minutes)
+   - `Medium` (< 180 minutes)  
+   - `Long` (≥ 180 minutes)  
+3. **Genre Distribution** → Counted and visualized the number of movies per genre.  
+4. **Duration Distribution** → Counted and visualized movies by duration category.  
+
+---
+
+## Visualizations
+- **Movies by Genre (2000–2010)**  
+  A bar chart showing the number of movies produced in each genre.  
+
+- **Movies by Duration (2000–2010)**  
+  A bar chart displaying the distribution of movies by length (short, medium, long).  
+
+---
+
+## Key Findings
+- **Genre Popularity**: The dataset shows a clear concentration in specific genres, with some genre dominating the movie production.  
+- **Duration Trends**: Medium-length movies (< 180 minutes) were by far the most common, followed by short-length movies (< 90 minutes) and a few long-length movies (≥ 180 minutes).  
+- **Most Preferred Type**: By combining the top genre with the most frequent duration, the **most preferred movie type** of the decade is identified.
+
+---
+
+## Technologies Used
+- **Python**  
+- **Pandas** → Data cleaning and filtering  
+- **NumPy** → Logical operations for year filtering  
+- **Matplotlib** → Bar charts for genre and duration analysis  
