@@ -1,16 +1,15 @@
 <center><img src="image/netflix.jpg"></center>
 
----
+# 🎞️ Netflix: Movie Analysis
 
-# Investigating Netflix Movies
-
+## 📘 Overview
 **Netflix**, founded in 1997, started as a DVD rental service before evolving into one of the world’s largest streaming platforms. Today, it serves millions of subscribers across the globe, offering a wide range of movies, TV shows, documentaries, and original content. With its vast entertainment library and global reach, Netflix not only transformed how people consume media but also provides a valuable dataset for analyzing trends in the entertainment industry.
 
 This project analyzes **Netflix movies released between year 2000 to 2010** using Python, Pandas, and Matplotlib. The goal is to uncover patterns in genres, durations, and overall movie distribution during this decade.
 
 ---
 
-## Dataset
+## 💾 Dataset
 The dataset **`netflix_data.csv`** contains following information:
 | Column | Description |
 |--------|-------------|
@@ -28,7 +27,7 @@ The dataset **`netflix_data.csv`** contains following information:
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 📈 Exploratory Data Analysis (EDA)
 These were the steps performed to acquire the insights:
 
 1. **Filtering** → Subsetted the data to keep only movies released between year 2000 to 2010.  
@@ -41,7 +40,7 @@ These were the steps performed to acquire the insights:
 
 ---
 
-## Visualizations
+## 📊 Visualizations
 - **Movies by Genre (2000–2010)**  
   A bar chart showing the number of movies produced in each genre.  
 
@@ -50,14 +49,14 @@ These were the steps performed to acquire the insights:
 
 ---
 
-## Key Findings
+## 🔍 Key Findings
 - **Genre Popularity**: The dataset shows a clear concentration in specific genres, with some genre dominating the movie production.  
 - **Duration Trends**: Medium-length movies (< 180 minutes) were by far the most common, followed by short-length movies (< 90 minutes) and a few long-length movies (≥ 180 minutes).  
 - **Most Preferred Type**: By combining the top genre with the most frequent duration, the **most preferred movie type** of the decade is identified.
 
 ---
 
-## Technologies Used
+## 🧩 Technologies Used
 - **Python**  
 - **Pandas** → Data cleaning and filtering  
 - **NumPy** → Logical operations for year filtering  
